@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUIBooksApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUIBooksApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
