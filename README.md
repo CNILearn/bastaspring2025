@@ -10,6 +10,8 @@ Dienstag, 4. März 2025 - 10:45-11:45, Gold 2
 
 C# 13 ist da! Obwohl die Liste der neuen Features kürzer ist als in früheren Versionen, gibt es spannende Neuerungen zu entdecken. Unter anderem wurde das lock-Keyword für den neuen .NET 9 Typ Lock überarbeitet. Außerdem ist es jetzt nicht mehr notwendig, eine variable Anzahl von Parametern ausschließlich mit einem Array zu deklarieren – Span ist eine der neuen Optionen! Zudem gibt es zahlreiche Erweiterungen für ref struct-Typen. In dieser Session erfahren Sie alles über die neuen Erweiterungen von C#, die Weiterentwicklung der Sprache und die Vorteile, die diese Features mit sich bringen.
 
+[Slides C# 13 and 14 Updates](slides/CSharpUpdates.pdf)
+
 ### Samples
 
 - Escape character (C# 13)
