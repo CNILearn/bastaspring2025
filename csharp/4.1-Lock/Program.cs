@@ -13,7 +13,7 @@ for (int i = 0; i < 10; i++)
             Thread.Sleep(1000);
             Console.WriteLine($"{j}: B.");
         }
-
+       
         using (l1.EnterScope())
         {
             Console.WriteLine($"{j}: C.");
@@ -28,11 +28,17 @@ for (int i = 0; i < 10; i++)
         //    Console.WriteLine($"{j}: F.");
         //}
 
-        //Monitor.Enter(l2);
-        //Console.WriteLine($"{j}: C.");
-        //Thread.Sleep(1000);
-        //Console.WriteLine($"{j}: D.");
-        //Monitor.Exit(l2);
+        //try
+        //{
+        //    Monitor.Enter(l2);
+        //    Console.WriteLine($"{j}: C.");
+        //    Thread.Sleep(1000);
+        //    Console.WriteLine($"{j}: D.");
+        //}
+        //finally
+        //{
+        //    Monitor.Exit(l2);
+        //}
     });
 }
 
