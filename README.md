@@ -10,6 +10,24 @@ Dienstag, 4. März 2025 - 10:45-11:45, Gold 2
 
 C# 13 ist da! Obwohl die Liste der neuen Features kürzer ist als in früheren Versionen, gibt es spannende Neuerungen zu entdecken. Unter anderem wurde das lock-Keyword für den neuen .NET 9 Typ Lock überarbeitet. Außerdem ist es jetzt nicht mehr notwendig, eine variable Anzahl von Parametern ausschließlich mit einem Array zu deklarieren – Span ist eine der neuen Optionen! Zudem gibt es zahlreiche Erweiterungen für ref struct-Typen. In dieser Session erfahren Sie alles über die neuen Erweiterungen von C#, die Weiterentwicklung der Sprache und die Vorteile, die diese Features mit sich bringen.
 
+### Samples
+
+- Escape character (C# 13)
+- Implicit index access with object initializers (C# 13)
+- Simple lambda expression parameters with modifiers (C# 14)
+- Unconstrained generics (C# 14)
+- Natural types
+- Enhancements with method groups and natural types (C# 14)
+- Field keyword (C# 13 with preview)
+- Weak events, partial events (C# 14)
+- Books App using Aspire, WPF, WinUI with Community Toolkit (Field keyword, partial properties)
+- Ref struct with interface implementations, allows ref struct
+- Allows ref struct
+- Params with IEnumerable, List, Span (C# 13)
+- Span conversion (C# 14)
+- Lock (C# 13)
+- Native AOT 
+
 ## Von Transient zu Singleton: die Geheimnisse der .NET Dependency Injection
 
 Mittwoch, 5. März 2025 - 10:30 - 11:30, Ballsaal 2
