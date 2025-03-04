@@ -21,7 +21,7 @@
 
         <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
             <!--<Button Content="Load" Click="Load_Click" />-->
-            <Button Content="Load" Command="{x:Bind ViewModel.LoadCommand}" />
+            <Button Content="Load" Command="{x:Bind ViewModel.LoadBooksCommand}" />
         </StackPanel>
         <ListView Grid.Row="1" 
                   ItemsSource="{x:Bind ViewModel.Books}"/>

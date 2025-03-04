@@ -13,16 +13,14 @@ public class MainWindowViewModel : ObservableObject
     public IEnumerable<Book> Books => _books;
 
     private readonly IBooksService _booksService;
- //   private readonly BookStateService _bookStateService;
 
     public MainWindowViewModel(IBooksService booksService)
     {
         _booksService = booksService;
- //       _bookStateService = bookStateService;
-        LoadCommand = new DelegateCommand(async () => await LoadBooksAsync());
+        LoadBooksCommand = new DelegateCommand(async () => await LoadBooksAsync());
     }
 
-    public ICommand LoadCommand { get; private set; }
+    public ICommand LoadBooksCommand { get; private set; }
 
     public async Task LoadBooksAsync()
     {
@@ -32,5 +30,4 @@ public class MainWindowViewModel : ObservableObject
             _books.Add(book);
         }
     }
-
 }
