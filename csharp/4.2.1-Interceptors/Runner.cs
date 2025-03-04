@@ -5,7 +5,7 @@ public class Runner
     public void Bar()
     {
         DoTheMagic(42); // this method will be replaced
-        DoTheMagic(3); // this method will do the Foo 
+        DoTheMagic(3); // this method will do the Dothemagic 
         Foo();  
         Foo();
     }
