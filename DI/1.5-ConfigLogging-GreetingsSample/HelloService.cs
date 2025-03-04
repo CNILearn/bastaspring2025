@@ -9,7 +9,7 @@ internal class HelloService(IOptions<HelloServiceOptions> options, ILogger<Hello
     {
         string from = options.Value.From ?? "unknown";
         logger.LogInformation("Greet invoked with {name} from {from}", name, from);
-
+        logger.LogTrace("Trace message");
         return $"Hello, {name}, greetings from {from}";
     }
 }
