@@ -1,0 +1,60 @@
+﻿@page "/showbooks"
+@rendermode InteractiveAuto
+
+@inject IBooksService BookService
+@inject PersistentComponentState ComponentState
+
+<h3>ShowBooks</h3>
+
+<div>@RendererInfo.IsInteractive</div>
+<div>@RendererInfo.Name</div>
+
+@if (books is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Publisher</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in books)
+            {
+                <tr>
+                    <td>@book.Id</td>
+                    <td>@book.Title</td>
+                    <td>@book.Publisher</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    private IEnumerable<Book>? books;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ComponentState.RegisterOnPersisting(PersistState);
+
+        if (ComponentState.TryTakeFromJson<IEnumerable<Book>>("books", out IEnumerable<Book>? cachedBooks))
+        {
+            books = cachedBooks;
+            if (books is not null) return;            
+        }
+        books = await BookService.GetBooksAsync();
+    }
+
+    Task PersistState()
+    {
+        ComponentState.PersistAsJson("books", books); 
+        return Task.CompletedTask;
+    }
+}

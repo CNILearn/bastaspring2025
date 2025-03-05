@@ -1,0 +1,51 @@
+﻿@page "/mychat"
+@rendermode InteractiveWebAssembly
+
+@using Microsoft.AspNetCore.SignalR.Client
+<h3>Chat</h3>
+
+<label for="name">Name:</label>
+<input type="text" id="name" @bind="name" />
+<br />
+<label for="message">Message:</label>
+<input type="text" id="message" @bind="message" />
+<br />
+<button id="sendButton" @onclick="SendMessage">Send</button>
+
+<ul>
+    @foreach (var message in messages)
+    {
+        <li>@message</li>  
+    }
+</ul>
+
+
+@code {
+    private string? name;
+    private string? message;
+    private List<string> messages = [];
+    private HubConnection? connection;
+
+    private void SendMessage()
+    {
+        if (connection is null) return;
+
+        connection.InvokeAsync("SendMessage", name, message);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        connection = new HubConnectionBuilder()
+            .WithUrl("https://localhost:7226/chat")
+            .Build();
+
+        connection.On<string, string>("BroadcastMessage", (user, message) => {
+            messages.Add($"{user}: {message}");
+            StateHasChanged();
+        });
+
+        await connection.StartAsync();
+
+    }
+
+}

@@ -1,0 +1,18 @@
+﻿@BlazorWithServices_HostAddress = https://localhost:7226
+
+### Get all books
+
+GET {{BlazorWithServices_HostAddress}}/api/Book
+
+### Get book by id
+GET {{BlazorWithServices_HostAddress}}/api/Book/11
+
+### Add book
+POST {{BlazorWithServices_HostAddress}}/api/Book
+Content-Type: application/json
+
+{
+  "title": "Pragmatic Microservices",
+  "publisher": "Packt Publishing"
+
+}
