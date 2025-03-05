@@ -1,4 +1,4 @@
-# BASTA! Spring
+# BASTA! Spring 2025
 
 Frankfurt, 3.-7. März 2025
 
