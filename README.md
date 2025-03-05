@@ -4,6 +4,14 @@ Frankfurt, 3.-7. März 2025
 
 [BASTA! Die Konferenz für .NET, Web & AI Innovation](https://basta.net/frankfurt)
 
+## Important links
+
+- [My C# Blog](https://csharp.christiannagel.com)
+- [Codebreaker Org](https://github.com/codebreakerapp)
+- [Pragmatic Microservices Repo](https://github.com/PacktPublishing/Pragmatic-Microservices-With-csharp-and-Azure)
+- [Pragmatic Microservices Book](https://www.packtpub.com/en-us/product/pragmatic-microservices-with-c-and-azure-9781835088296)
+- [Upcoming Expert C# Repo](https://github.com/PacktPublishing/Expert-CSharp-Programming)
+
 ## C# 13: Neue Funktionen und Ausblick auf C# 14
 
 Dienstag, 4. März 2025 - 10:45-11:45, Gold 2
