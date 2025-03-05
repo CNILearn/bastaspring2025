@@ -8,9 +8,9 @@ Frankfurt, 3.-7. März 2025
 
 - [My C# Blog](https://csharp.christiannagel.com)
 - [Codebreaker Org](https://github.com/codebreakerapp)
-- [Pragmatic Microservices Repo](https://github.com/PacktPublishing/Pragmatic-Microservices-With-csharp-and-Azure)
+- [Pragmatic Microservices Book Repo](https://github.com/PacktPublishing/Pragmatic-Microservices-With-csharp-and-Azure)
 - [Pragmatic Microservices Book](https://www.packtpub.com/en-us/product/pragmatic-microservices-with-c-and-azure-9781835088296)
-- [Upcoming Expert C# Repo](https://github.com/PacktPublishing/Expert-CSharp-Programming)
+- [Upcoming Expert C# Book Repo](https://github.com/PacktPublishing/Expert-CSharp-Programming)
 
 ## C# 13: Neue Funktionen und Ausblick auf C# 14
 
