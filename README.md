@@ -6,6 +6,7 @@ Frankfurt, 3.-7. März 2025
 
 ## Important links
 
+- [Codebreaker App](https://blazor.codebreaker.app)
 - [My C# Blog](https://csharp.christiannagel.com)
 - [Codebreaker Org](https://github.com/codebreakerapp)
 - [Pragmatic Microservices Book Repo](https://github.com/PacktPublishing/Pragmatic-Microservices-With-csharp-and-Azure)
@@ -72,6 +73,9 @@ In dieser Session tauchen wir in die Welt der .NET Dependency Injection ein und 
 ## Workshop: .NET Aspire mit .NET 9 und Microsoft Azure
 
 Freitag, 7. März 2025 - 09:00 - 16:30, Gigabyte WS
+
+- [Slides](slides/AspireWorkshop2025.pdf)
+- [Workshop Repo](https://github.com/CodebreakerApp/codebreakerlight/)
 
 Erleben Sie die Zukunft der Anwendungsentwicklung mit .NET Aspire, einem Cloud-fähigen Stack aus Bibliotheken und Tools zur Entwicklung verteilter Anwendungen. 
 
